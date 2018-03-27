@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+#nav-toggle {
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+}
+#nav-toggle div {
+    position: relative;
+}
+#nav-toggle span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #666;
+    left: 0;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+}
+#nav-toggle span:nth-child(1) {
+    top: 0;
+}
+#nav-toggle span:nth-child(2) {
+    top: 11px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 22px;
+}
+#global-nav ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+.open #global-nav ul {
+    display: block;
+}
+ 
+/*@media screen and (max-width: 640px) {*/
+.top-head-inner {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+}
+/* Fixed reset */
+#mobile-head {
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    z-index: 999;
+    position: relative;
+}
+#global-nav {
+    position: absolute;
+    /* 開いてないときは画面外に配置 */
+    top: -500px;
+    background: #333;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+#global-nav ul {
+    list-style: none;
+    position: static;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+}
+#global-nav ul li {
+    float: none;
+    position: static;
+}
+ #global-nav ul li a {
+    width: 100%;
+    display: block;
+    color: #fff;
+    padding: 18px 0;
+	padding-left:30px;
+    border-left: none;
+	text-align:left;
+	text-decoration:none;
+}
+ #global-nav ul li a:hover {
+	 color:#666666;
+ }
+#nav-toggle {
+    display: block;
+}
+ 
+/* #nav-toggle 切り替えアニメーション */
+.open #nav-toggle span:nth-child(1) {
+   top: 11px;
+   -webkit-transform: rotate(315deg);
+   -moz-transform: rotate(315deg);
+   transform: rotate(315deg);
+}
+.open #nav-toggle span:nth-child(2) {
+   width: 0;
+   left: 50%;
+}
+.open #nav-toggle span:nth-child(3) {
+   top: 11px;
+   -webkit-transform: rotate(-315deg);
+   -moz-transform: rotate(-315deg);
+   transform: rotate(-315deg);
+}
+/* #global-nav スライドアニメーション */
+.open #global-nav {
+   /* #global-nav top + #mobile-head height */
+   -moz-transform: translateY(556px);
+   -webkit-transform: translateY(556px);
+   transform: translateY(556px);
+}
