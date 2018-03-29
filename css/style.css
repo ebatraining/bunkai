@@ -19,8 +19,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
  ================================================*/
 body {
 	font-size:16px;
-	/*font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;*/
-    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+	font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 	color:#000000;
 	line-height:1.5;
 	min-width: 1024px;
@@ -52,7 +51,7 @@ body {
 		width: 100%;
 		min-height:630px;
 		margin:0 auto;
-		
+
 		}
 .top_img{
 	width:960px;
@@ -60,7 +59,7 @@ body {
 	}
 /*================================================
  * テキスト
- ================================================*/	
+ ================================================*/
 
 a {
 	color:#043771;
@@ -75,12 +74,6 @@ h1 {
 	padding:5px 0px;
 }
 
-h2 {
-	padding-top:50px;
-	font-size:36px;
-	font-family:font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
-	color:#000000;
-	}
 .h2_down {
 	font-size:26px;}
 
@@ -137,7 +130,6 @@ h6 {
 
 p {
 	margin:0 0 40px 0;
-	line-height:1.8;
 }
 
 a {
@@ -150,7 +142,7 @@ a:hover {
 	line-height:1.8;
 	font-size:14px;
 	}
-	
+
 .text15{
 	line-height:1.8;
 	font-size:15px;
@@ -329,7 +321,7 @@ blockquote {
 .l_50{
 	float:left;
 	width:49%;
-	}	
+	}
 .l_47{
 	float:right;
 	width:47%;
@@ -426,7 +418,7 @@ blockquote {
 }
 .ib-box01{
     display: inline-block;
-    *display: inline;  
+    *display: inline;
     *zoom: 1;
     width: 220px;
     margin: 5px;
@@ -435,7 +427,7 @@ blockquote {
   }
 .ib-box02{
     display: inline-block;
-    *display: inline;  
+    *display: inline;
     *zoom: 1;
     width: 270px;
     margin: 5px;
@@ -525,6 +517,56 @@ blockquote {
     margin-right: auto;
     padding: 18px;
 }
+.nayami{
+	background:url(../images/img03_komari_.png)no-repeat;
+  background-size:35%;
+	background-position: 92% 0%;
+	}
+.nayami h2 {
+	font-size: 40px;
+	color:#8A2908;
+	margin-left: 5%;
+	font-weight: bold;
+ }
+.nayami ul {
+	display: flex;
+	display:-webit-flex;
+  width: 100%;
+	text-align: center;
+  }
+.nayami li {
+	width:  25%;
+	background-color: rgba( 255, 160, 167, 0.85 );
+	border: 2px solid #FAFAFA;
+	margin-top: 0.5%;
+	margin-right: 0%;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	box-shadow: 0 0 5px
+	padding:1%;
+  }
+.red_text{
+	color:#8A2908;
+	font-size: 26px;
+	display: block;
+	text-align: center;
+	margin:0.5em;
+}
+ .nayami p{
+	 color:#FBEFFB;
+	 font-size: 35px;
+	 display: flex;
+	 display:-webit-flex;
+	 align-items: center;
+	 -webkit-align-items: center;
+	 justify-content: center;
+	 -webkit-justify-content: center;
+	 height:5em;
+ span
+}
+ .nayami span{
+	 font-weight: bold;
+ }
 
 /*================================================
  *  汎用クラス
@@ -546,7 +588,7 @@ blockquote {
 	float:left;
 	margin:0 2em 0.5em 0.5em;
 	display:block;
-	
+
 }
 
 /* 写真右寄せ */
@@ -554,7 +596,7 @@ blockquote {
 	float:right;
 	margin:0 0.5em 0.5em 2em;
 	display:block;
-	
+
 }
 
 /* 2カラム（スマートフォンでは1カラム) */
@@ -769,4 +811,3 @@ ul.cntents_menu2{
 .totop img:hover {
 	background:#333;
 }
-
